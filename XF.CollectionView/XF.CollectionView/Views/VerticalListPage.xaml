@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Gallery of Art"
+             x:Class="XF.CollectionView.Views.VerticalListPage">
+    <ContentPage.Content>
+
+        <CollectionView ItemsSource="{Binding Pictures}"
+                            ItemsLayout="VerticalList">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <Grid Padding="10" Margin="12">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="1*" />
+                            <RowDefinition Height="3*" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="{Binding ImageUrl}"
+                                       Grid.RowSpan="2"
+                                       Aspect="AspectFill"
+                               WidthRequest="100"
+                                       HeightRequest="150" />
+
+                        <Label Grid.Column="1"
+                                       VerticalOptions="Center"
+                                       Text="{Binding Name}"
+                                       FontAttributes="Bold" />
+
+
+                        <Label Text="{Binding ShortDescription}"
+                                       Grid.Row="1"
+                                       Grid.Column="1"
+                                       VerticalOptions="Start"
+                                       FontAttributes="Italic" />
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </ContentPage.Content>
+</ContentPage>

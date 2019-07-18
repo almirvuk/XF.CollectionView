@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="XF.CollectionView.Views.ExamplesPage">
+    
+    <NavigationPage.TitleView>
+        <StackLayout HorizontalOptions="CenterAndExpand">
+            <Label Text="The Art of CollectionView" VerticalOptions="Center" FontAttributes="Bold" TextColor="White" FontSize="Large" VerticalTextAlignment="Center"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
+    <ContentPage.Content>
+    
+        <StackLayout Margin="12" Padding="4" VerticalOptions="Center">
+
+            <Button Text="Vertical List" HorizontalOptions="FillAndExpand" Command="{Binding OpenVerticalListPageCommand}"  BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Horizontal List" HorizontalOptions="FillAndExpand" Command="{Binding OpenHorizontalListPageCommand}" BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Horizontal Grid" HorizontalOptions="FillAndExpand" Command="{Binding OpenHorizontalGridPageCommand}"  BackgroundColor="Black" TextColor="White"/>
+            <Button Text="Vertical Grid" HorizontalOptions="FillAndExpand" Command="{Binding OpenVerticalGridPageCommand}"  BackgroundColor="Black" TextColor="White"/>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

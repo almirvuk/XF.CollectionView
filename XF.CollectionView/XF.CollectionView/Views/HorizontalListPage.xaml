@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Gallery of Art"
+             x:Class="XF.CollectionView.Views.HorizontalListPage">
+    <StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+
+            <Label Text="Art of the day"
+                   Margin="8,8,8,0"
+                   FontSize="Medium"
+                   TextColor="Crimson"
+                   FontAttributes="Bold"/>
+
+            <Label HorizontalOptions="EndAndExpand"
+                   Text="See All"
+                   FontAttributes="Bold"
+                   Margin="0,8,8,0"
+                   FontSize="Medium"
+                   TextColor="DarkGray"/>
+
+        </StackLayout>
+        
+        <CollectionView ItemsSource="{Binding Pictures}"
+                        ItemsLayout="HorizontalList">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+
+                    <Grid Padding="10" Margin="12">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="3*" />
+                            <RowDefinition Height="2*" />
+                        </Grid.RowDefinitions>
+
+                        <Image Source="{Binding ImageUrl}"
+                               Grid.Row="0"
+                               Aspect="AspectFill"
+                               WidthRequest="100"
+                               HeightRequest="150" />
+
+                        <StackLayout Grid.Row="1">
+
+                            <Label Grid.Column="1"
+                                   VerticalOptions="Center"
+                                   Text="{Binding Name}"
+                                   FontAttributes="Bold" />
+
+
+                            <Label Text="{Binding ShortDescription}"
+                                   Grid.Row="1"
+                                   Grid.Column="1"
+                                   VerticalOptions="Start"
+                                   FontAttributes="Italic" />
+                        </StackLayout>
+
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
