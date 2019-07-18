@@ -1,13 +1,13 @@
 # XF.CollectionView
 
-Vertical Scrolling List
-![a](https://1.bp.blogspot.com/-Yh6qCW_lH8w/XTCso_7GKMI/AAAAAAAAIbc/1HGNz-vaXH8rFfbMd8YJWwY_L4GNwdC3ACEwYBhgL/s1600/VerticalListPage.gif)
+## Vertical Scrolling List
+<img width="500" src="https://github.com/almirvuk/XF.CollectionView/blob/master/VerticalListPage.gif">
 
-Horizontal Scrolling List
-![a](https://1.bp.blogspot.com/-1co2EnCCe2k/XTCwWdJnzrI/AAAAAAAAIbw/ha-fCjF1nc8hzw4cLtMLi_Z8a6O6vximgCLcBGAs/s1600/HorizontalListPage.gif)
+## Horizontal Scrolling List
+<img width="500" src="https://github.com/almirvuk/XF.CollectionView/blob/master/HorizontalListPage.gif">
 
-Vertical Scrolling Grid
-![a](https://1.bp.blogspot.com/-qGyVsh6LAYo/XTCzDnfXc7I/AAAAAAAAIcA/nWqtOOiESXwsnPctCovgxuhernNU60mJgCLcBGAs/s1600/VerticalGridPage.gif)
+## Vertical Scrolling Grid
+<img width="500" src="https://github.com/almirvuk/XF.CollectionView/blob/master/VerticalGridPage.gif">
 
-Horizontal Scrolling Grid
-![a](https://1.bp.blogspot.com/-SMl0MH_6eok/XTCzEaqTbLI/AAAAAAAAIcM/QX0NmWSVydkhQ6CBVZe2-nKZqqNeZEilgCEwYBhgL/s1600/HorizontalGridPage.gif)
+## Horizontal Scrolling Grid
+<img width="500" src="https://github.com/almirvuk/XF.CollectionView/blob/master/HorizontalGridPage.gif">
